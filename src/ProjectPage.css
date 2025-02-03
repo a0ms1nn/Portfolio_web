@@ -51,7 +51,11 @@
 .video-section {
     flex: 1;
     margin-left: 120px;
+    width: 50%;
+    max-width: 500px; /* เพิ่มขนาดวิดีโอให้ใหญ่ขึ้นเล็กน้อย */
+    height: auto;
 }
+
 
 .text-section {
     flex: 1;
@@ -62,7 +66,11 @@
     flex: 1;
     margin-left: 90px;
     margin-top: -20px;
+    width: 50%;
+    max-width: 4000px; /* เพิ่มขนาดวิดีโอให้ใหญ่ขึ้นเล็กน้อย */
+    height: auto;
 }
+
 .project-link {
     font-weight: 200;
     display: inline-block;
