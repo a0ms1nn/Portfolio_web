@@ -156,13 +156,13 @@
 
   .containerSchool, .containerEducation {
     width: 50%;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 }
 
 /* ปรับขนาดรูปใน containerSchool */
 .containerSchool img {
-  max-width: 50%;
+  max-width: 30%;
   height: auto;
 }
 
