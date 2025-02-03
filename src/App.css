@@ -164,6 +164,7 @@
 .containerSchool img {
   max-width: 30%;
   height: auto;
+  margin-left: 30%;
 }
 
 .containerEducation h2 {
@@ -217,6 +218,7 @@
 @media screen and (max-width: 768px) {
   .containerWorkSection {
     flex-direction: row;
+    margin-top: 10px;
   }
 
   .containerWorkExperience {
