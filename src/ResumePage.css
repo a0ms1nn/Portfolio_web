@@ -1,0 +1,51 @@
+/* Resume Section */
+.resume-section {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .resume-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10%;
+  }
+  
+  .resume-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;;
+  }
+  .resume-image:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Download Button */
+  .resume-download {
+    text-align: center;
+  }
+  
+  .download-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    background: #1f1f1f;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .download-btn:hover {
+    background: #000000;
+  }
+  

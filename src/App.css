@@ -1,0 +1,258 @@
+/* สไตล์ Navbar */
+.navbar {
+  background: black;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  font-size: 18px;
+}
+
+/* ชื่อเว็บไซต์ */
+.name {
+  
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  gap: 20px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+  margin-right: 5%;
+}
+
+.container a {
+  color: white;
+  background: black;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.container a:hover {
+  background-color: #444;
+}
+/* จัด container ของเนื้อหาข้อความและรูปภาพให้อยู่ในแถวเดียวกัน */
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px; /* ให้ห่างจาก Navbar */
+  padding: 0 40px;
+}
+
+/* ปรับ containerText ให้ใช้ 50% ของพื้นที่ */
+.containerText {
+  width: 45%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: -90px; /* ปรับให้ containerText อยู่ใต้ containerProfile */
+}
+
+.containerText h1 {
+  margin-bottom: 3px; /* ลดระยะห่างระหว่าง h1 */
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.containerText h1 {
+  font-family: 'Courier New', monospace; /* ใช้ฟอนต์ที่เหมือนการพิมพ์ */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff; /* ขีดขวางให้เหมือนเคอร์เซอร์ */
+  width: 0;
+  animation: typing 3s steps(30) 0.5s forwards; /* พิมพ์เสร็จใน 3 วินาที */
+}
+
+/* เพิ่ม delay ให้กับ "I'm Aomsin!" */
+.containerText h1:nth-child(2) {
+  animation-delay: 2.5s; /* ช้าไปอีก 4 วินาทีหลัง "Hello" */
+}
+
+.containerText p {
+  opacity: 0; /* เริ่มต้นที่โปร่งใส */
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* หน่วงเวลาให้ข้อความใน <p> ค่อยๆ ปรากฏหลังจาก "Hello" และ "I'm Aomsin!" */
+.containerText p:nth-child(3) {
+  animation-delay: 4s; /* หน่วงเวลา 6 วินาที */
+}
+
+.containerText p:nth-child(4) {
+  animation-delay: 4.5s; /* หน่วงเวลา 7 วินาที */
+}
+
+/* ปรับ containerProfile ให้ใช้ 50% ของพื้นที่ */
+.containerProfile {
+  width: 70%;
+  display: flex;
+  justify-content: center; /* จัดให้อยู่ตรงกลาง */
+  align-items: center;
+}
+
+/* ปรับขนาดรูปให้ไม่เกิน container */
+.containerProfile img {
+  width: 100%; /* ใช้เต็มพื้นที่ของ containerProfile */
+  max-width: 100vh; /* เพิ่ม max-width เพื่อขยายรูป */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.containerEducation{ 
+    margin-top: -100px;
+    margin-left: 0px;
+    width: 50%; 
+}
+.containerWorkExperience {
+  margin-top: -0px;
+  margin-left: 40px;
+  width: 50%; 
+}
+
+/* เพิ่ม Flexbox เพื่อจัดตำแหน่งรูปภาพและข้อความ */
+.containerSchoolEducation {
+  display: flex; /* จัดให้เป็น flexbox */
+  gap: 20px; /* เพิ่มระยะห่างระหว่างรูปกับข้อความ */
+  margin-top: 20px; /* เพิ่มระยะห่างจากส่วนอื่น */
+}
+
+.containerSchool {
+  width: 50%; /* ให้รูปอยู่ครึ่งหน้าซ้าย */
+  display: flex;
+  justify-content: center; /* จัดรูปไว้กลาง */
+  align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+  padding-left: 50px; /* เพิ่มช่องว่างทางซ้าย */
+  margin-top: -80px;
+}
+
+.containerSchool img {
+  max-width: 80%; /* ปรับขนาดรูปให้เล็กลง */
+  height: auto; /* ให้รูปคงสัดส่วน */
+}
+
+.containerEducation {
+  width: 50%; /* ข้อความอยู่ครึ่งหน้าขวา */
+  padding-left: 20px; /* ให้มีช่องว่างระหว่างรูปกับข้อความ */
+}
+
+.containerEducation h2 {
+  margin-bottom: 10px;
+}
+
+.containerEducation h3 {
+  margin-top: 5px;
+}
+
+.containerWorkExperience h2 {
+  margin-bottom: 10px; /* เว้นระยะห่างจากหัวข้อ */
+}
+
+
+.containerWorkExperience h3 {
+  margin-top: 5px; /* เว้นระยะห่างจากหัวข้อย่อย */
+}
+
+/* จัดรูปแบบการแสดงผลของเนื้อหาประสบการณ์การทำงาน */
+.workExperienceDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px; /* ลดระยะห่างจากด้านบน */
+}
+
+.workExperienceDetails h4 {
+  margin-right: 10px;
+}
+
+.workExperienceDetails h5 {
+  font-size: 16px; /* ลดขนาดข้อความสำหรับเวลา */
+}
+
+.workExperienceDetails1 p {
+  margin-top: 10px;
+}
+
+/* เพิ่มขอบของ section ต่างๆ */
+
+.containerWorkSection {
+  display: flex; /* จัดให้อยู่ในแถวเดียวกัน */
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+  gap: 20px; /* เพิ่มช่องว่างระหว่างข้อความกับรูป */
+  margin-top: 20px;
+}
+
+.containerWorkExperience {
+  width: 50%; /* ให้ข้อความใช้พื้นที่ 60% */
+}
+
+.containerWork {
+  width: 40%; /* ให้รูปใช้พื้นที่ 40% */
+  display: flex;
+  justify-content: center; /* จัดรูปไว้ตรงกลาง */
+  align-items: center;
+}
+
+.containerWork img {
+  max-width: 80%; /* ปรับขนาดรูปให้เล็กลง */
+  height: auto;
+}
+
+
+/* สไตล์ฟุตเตอร์ */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #ff6f61;
+}
